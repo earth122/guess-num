@@ -1,5 +1,9 @@
 import random # standard library 標準函式庫 random 為module模組
-r = random.randint(1, 100) # randint 為函式
+start = input('請決定隨機數字範圍開始值: ')
+end = input('請決定隨機數字範圍結束值' )
+start = int(start)
+end = int(end)
+r = random.randint(start, end) # randint 為函式
 count = 0
 while True:
 	count += 1 # count = count + 1 的快寫法
